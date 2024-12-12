@@ -15,7 +15,7 @@ export const ApiKeyContextProvider: React.FC<{ children: React.ReactNode }> = ({
 
     // Set default API key for testing
     useEffect(() => {
-        const defaultApiKey = 'AIzaSyBwAG5o776jvIXp1HMU3h94oaYDW16vmTk';
+        const defaultApiKey = 'AIzaSyBwAG5o776-Put-Your-Own-API-Key';
         setApiKeyState(defaultApiKey);
         AsyncStorage.setItem('apiKey', defaultApiKey);
     }, []);
