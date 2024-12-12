@@ -1,0 +1,32 @@
+/* Import Tailwind's base styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Customizing Tailwind with additional styles */
+
+/* Primary color class */
+@layer base {
+  .bg-primary {
+    background-color: #6200ee; /* Custom primary color */
+  }
+  .text-primary {
+    color: #6200ee; /* Custom text color */
+  }
+}
+
+/* Splash screen custom styles */
+@layer components {
+  .custom-splash {
+    @apply bg-primary rounded-2xl p-6 m-6 shadow-lg; /* Custom rounded and shadow effects */
+  }
+}
+
+/* Responsive container styles */
+@layer utilities {
+  @media (min-width: 768px) {
+    .responsive-container {
+      @apply grid grid-cols-2 gap-4; /* Grid layout for medium screens */
+    }
+  }
+}
